@@ -1,0 +1,30 @@
+<!--pages/components/img_bar/imgbar.wxml-->
+    <view style="margin: {{content.modulePadding}}px 0" class="imgbar_ul">
+      <view class="yangshi1"
+          style="width: calc(100%/{{content.dataset.length}})"
+          wx:if="{{content.layout == 1 && content.layout1_style == 1}}"
+          wx:for="{{content.dataset}}" wx:key="index">
+        <!-- <img :src="n.pic | imgs" > -->
+        <image src="{{item.pic}}" class="yangshi1_img" style="height:calc(100vw/{{content.dataset.length}}) "></image>
+        <view class="yangshi1_p" style="color: {{item.titleColor}};background-color: {{item.titleBackgroundColor}} ">{{item.showtitle}}</view>
+      </view>
+      <view class="yangshi2"
+          wx:if="{{content.layout == 1 && content.layout1_style == 2}}"
+          wx:for="{{content.dataset}}" wx:key="index">
+        <view class="yangshi2_div">
+          <!-- <img :src="n.pic | imgs"> -->
+          <image class="yangshi2_img" src="{{item.pic}}"></image>
+          <view class="yangshi2_p" style="color: {{n.titleColor}};">{{item.showtitle}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="ul2">
+      <view class="buju2"
+          wx:if="{{content.layout == 2}}"
+          wx:for="{{content.dataset}}" wx:key="index">
+        <!-- <img :src="n.pic | imgs"> -->
+        <image class="buju2_img" src="{{item.pic}}"></image>
+        <view style="color: {{item.titleColor}};">{{item.showtitle}}</view>
+      </view>
+    </view>
+

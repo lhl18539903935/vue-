@@ -1,0 +1,26 @@
+<!--pages/components/swiper/swiper.wxml-->
+<view style="margin-top:{{content.modulePadding}}rpx;margin-bottom:{{content.modulePadding}}rpx" wx:if="{{content.showType == 2}}">
+  <swiper indicator-dots="{{indicatorDots}}" circular="true" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:{{ images[0].height }}rpx;'>
+    <block wx:for="{{content.dataset}}" wx:key="index">
+      <swiper-item>
+        <!-- <image src="{{item.pic}}" class="slide-image"/> -->
+        <image  bindload="imageLoad" class="slide-image" style='width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;' data-index="{{ index }}" src="{{item.pic}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- <view style="margin-top:{{content.modulePadding}}rpx;margin-bottom:{{content.modulePadding}}rpx;width:100%;" wx:if="{{content.showType == 1}}">
+  <view style="width:100%;"  wx:for="{{content.dataset}}" wx:key="index">
+    <image src="{{item.pic}}"></image>
+  </view>
+</view> -->
+
+<view class="page__bd" style="margin-top:{{content.modulePadding}}rpx;margin-bottom:{{content.modulePadding}}rpx;width:100%;" wx:if="{{content.showType == 1}}">
+    <view class="section section_gap" wx:for="{{content.dataset}}" wx:for-item="item" wx:key="index">
+      <view class="section__ctn">
+        <image  bindload="imageLoad" style='width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;' data-index="{{ index }}" src="{{item.pic}}"></image>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+  <advert></advert> 
+  <text-bar></text-bar>
+  <search></search>
+  <swiper_components content="{{content}}"></swiper_components> 
+   <hotsale content="{{content}}"></hotsale> 
+    <nav></nav> 
+   <rich></rich>
+   <titlebar></titlebar>  
+     <goods></goods>   
+   <scrollbar></scrollbar>
+   <cardlist></cardlist>
+   <groom></groom>
+   <classify></classify>
+   <marquee></marquee>
+   <img_bar></img_bar>
+  
+   <cutoff></cutoff>
+   <auxiliary_blank></auxiliary_blank>
+   <topbar></topbar>
+   <shopwindow></shopwindow>
+</view>

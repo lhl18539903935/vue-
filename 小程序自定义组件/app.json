@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/member/member"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e4393c",
+    "navigationBarTitleText": "ease商城",
+    "navigationBarTextStyle": "white"
+  },
+ 
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/icon_home.png",
+        "iconPath": "images/icon_home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/icon_user.png",
+         "selectedIconPath": "images/icon_user.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "iconPath":"images/icon_allgoods.png",
+        "selectedIconPath": "images/icon_allgoods.png",
+        "text": "会员主页"
+      }
+    ],
+    "selectedColor": "#D63838"
+  },
+  
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

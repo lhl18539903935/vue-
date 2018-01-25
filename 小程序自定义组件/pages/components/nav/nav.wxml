@@ -1,0 +1,9 @@
+<!--pages/components/nav/nav.wxml-->
+<view class="nav_ul" style="margin:{{content.modluePadding}}px 0 ">
+  <view class="nav_li"
+
+    wx:for="{{content.dataset}}" wx:key="{{index}}">
+    <image class="nav_img" src="{{item.pic}}"></image>
+    <view style="display:inline-block">{{item.showtitle}}</view>
+  </view>
+</view>  

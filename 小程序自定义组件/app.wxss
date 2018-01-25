@@ -1,0 +1,5 @@
+/**app.wxss**/
+page{
+  width: 100%;
+  background:#fff; color:#555; font-size:28rpx; font-family: Verdana, Arial, Helvetica, sans-serif;
+}

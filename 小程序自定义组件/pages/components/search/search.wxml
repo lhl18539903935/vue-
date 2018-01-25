@@ -1,0 +1,6 @@
+<!--pages/components/search/search.wxml-->
+  <view style="margin: {{content.modulePadding}}px 0;position: relative;">
+    <!-- <input type="text" placeholder="商品搜索：请输入商品关键字" @change="postInput" v-model.lazy="inputs"> -->
+    <input type='text' placeholder="商品搜索：请输入商品关键字" bindfocus="postInput" value="{{inputs}}"></input>
+    <view style='display:inline-block' class="iconfont icon-fangdajing">icon</view>
+  </view>
